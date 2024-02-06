@@ -28,7 +28,7 @@ export default function DeviceInfoSection({
       />
       <div className="ml-8">
         <h1 className="card-title text-2xl mb-4 mt-8">Informações Gerais</h1>
-        <div className="flex gap-16 mb-7">
+        <div className="flex gap-16">
           <div>
             <p className="text-lg font-semibold">Versão do firmware</p>
             <p className="text-md">{fwVer?.version}</p>

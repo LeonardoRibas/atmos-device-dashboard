@@ -19,7 +19,9 @@ export default function Dashboard() {
   )
 
   if (loading) {
-    return <span className="loading loading-spinner loading-lg"></span>
+    return (
+      <span className="loading loading-spinner loading-lg text-black"></span>
+    )
   }
 
   if (error) {
@@ -27,7 +29,7 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="bg-white p-14 rounded-3xl text-black">
+    <div className="flex-col bg-white p-14 rounded-3xl text-black">
       <Header
         name={data?.name}
         comment={data?.comment}

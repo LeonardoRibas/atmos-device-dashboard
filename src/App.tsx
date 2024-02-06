@@ -1,8 +1,8 @@
-import Dashboard from './modules/dashboard/Dashboard'
+import Dashboard from './modules/dashboard'
 
 function App() {
   return (
-    <div className="flex h-screen w-screen bg-[#d1d1d1] p-20 justify-center">
+    <div className="flex h-screen w-screen bg-[#d1d1d1] items-center justify-center">
       <Dashboard />
     </div>
   )
