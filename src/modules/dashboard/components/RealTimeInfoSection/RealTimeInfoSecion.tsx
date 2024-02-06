@@ -14,7 +14,7 @@ export default function RealTimeInfoSection({
   rssi,
 }: RealTimeInfoSectionProps) {
   return (
-    <div className="flex gap-x-16 mb-8">
+    <div className="flex flex-col sm:flex-row md:gap-16 gap-4 mb-8">
       <RealTimeInfoCard
         icon={<FaTemperatureLow size="2rem" color="#5DD629" />}
         title="Temperatura Interna"

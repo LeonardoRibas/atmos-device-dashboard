@@ -20,7 +20,7 @@ export default function Dashboard() {
 
   if (loading) {
     return (
-      <span className="loading loading-spinner loading-lg text-black"></span>
+      <span className="loading loading-spinner loading-lg text-gray-900"></span>
     )
   }
 
@@ -29,7 +29,7 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="flex-col bg-white p-14 rounded-3xl text-black">
+    <div className="flex flex-col bg-white p-14 rounded-3xl text-gray-900 overflow-scroll">
       <Header
         name={data?.name}
         comment={data?.comment}

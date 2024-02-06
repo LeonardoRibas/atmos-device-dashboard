@@ -13,7 +13,7 @@ export default function DeviceInfoCard({
     <div className="card bg-white text-primary-content shadow-xl">
       <div className="card-body">
         <h1 className="card-title text-2xl mb-1">Potências</h1>
-        <div className="flex justify-between mb-7">
+        <div className="flex flex-col md:flex-row justify-between mb-7">
           <div>
             <p className="text-lg font-semibold">Compressor</p>
             <p className="text-2xl">{compressor_power} HP</p>
