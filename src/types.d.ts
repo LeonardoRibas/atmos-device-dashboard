@@ -1,12 +1,9 @@
-/// <reference types="vite/client" />
-
-export interface Root {
+interface IRoot {
   ok: boolean
   type: string
   installationMeter: InstallationMeter
 }
-
-export interface InstallationMeter {
+interface IInstallationMeter {
   fwVer: FwVer
   fuseBoxMeter: boolean
   equipment: string
@@ -16,7 +13,7 @@ export interface InstallationMeter {
   tags: any[]
   code: string
   name: string
-  installDate: string
+  installDate: Date
   meter: string
   equipmentID: string
   solarPanel: boolean
@@ -35,12 +32,12 @@ export interface InstallationMeter {
   impediment: Impediment[]
 }
 
-export interface FwVer {
+interface IFwVer {
   requestDate: string
   version: string
 }
 
-export interface InstallationMetaData {
+interface IInstallationMetaData {
   reason: string
   payload: Payload
   lastCommandId: any
@@ -51,14 +48,26 @@ export interface InstallationMetaData {
   uc: any
 }
 
-export interface Payload {
+interface IPayload {
   estabID: string
   estabAlias: string
   macAlias: string
   equipID: string
 }
 
-export interface Impediment {
+interface IImpediment {
   reasons: any[]
   isImpediment: boolean
+}
+
+interface ITelemetry {
+  mac: string // Identificador do dispositivo
+  temp_1: number // Temperatura interna
+  temp_2: number // Temperarura da evaporadora
+  rssi: number // Intensidade do sinal Wifi
+  date: number // Data de envio da mensagem
+  compressor_buffer: string // Lista de acionamentos do compressor
+  evap_fan_buffer: string // Lista de acionamentos do ventilador da evaporadora
+  defrost_buffer: string // Lista de acionamentos do degelo
+  open_door_buffer: string // Lista de aberturas de porta
 }
