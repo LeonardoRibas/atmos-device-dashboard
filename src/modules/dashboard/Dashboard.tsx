@@ -29,7 +29,7 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="flex flex-col bg-white p-14 rounded-3xl text-gray-900 overflow-scroll">
+    <div className="flex w-max-80 h-full flex-col bg-white p-14 rounded-3xl text-gray-900 ">
       <Header
         name={data?.name}
         comment={data?.comment}
